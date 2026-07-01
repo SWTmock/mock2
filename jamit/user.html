@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>一般社団法人 日本医用画像工学会 論文投稿管理</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#efefef;color:#333}
+.header{background:#2f5f98;color:#fff;padding:18px 28px;font-size:28px}
+.wrap{min-height:100vh}
+.main{padding:20px}
+.card{background:#fff;border:1px solid #ddd;margin-bottom:20px}
+.card h3{margin:0;background:#2f5f98;color:#fff;padding:10px 15px;font-size:18px}
+.card-body{padding:15px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{border:1px solid #ddd;padding:8px}
+th{background:#f7f7f7}
+input,select,textarea{width:100%;padding:8px;border:1px solid #bbb;box-sizing:border-box}
+.row{display:grid;grid-template-columns:220px 1fr;gap:12px;margin-bottom:12px;align-items:center}
+.required{color:#d50000;font-weight:bold;margin-right:6px}
+.radio{display:flex;gap:24px;flex-wrap:wrap}
+.radio label{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.btn{background:#5aa648;color:#fff;border:none;padding:12px 35px;border-radius:3px;cursor:pointer}
+.center{text-align:center}
+.link{color:#2d66b1;text-decoration:underline;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="header">一般社団法人 日本医用画像工学会　論文投稿フォーム</div>
+
+<div class="wrap">
+<div class="main">
+
+<div style="background:#fff;border-left:4px solid #2f5f98;padding:12px 15px;margin-bottom:20px;font-size:14px;">※は必須項目です。</div>
+
+<div class="card">
+<h3>投稿者情報</h3>
+<div class="card-body">
+<div class="row">
+<div><span class="required">※</span>会員種別</div>
+<div class="radio">
+<label><input type="radio" name="member">一般会員</label>
+<label><input type="radio" name="member">学生会員</label>
+<label><input type="radio" name="member">賛助会員</label>
+<label><input type="radio" name="member">その他</label>
+</div>
+</div>
+
+<div class="row"><div><span class="required">※</span>会員氏名</div><div><input></div></div>
+<div class="row"><div><span class="required">※</span>フリガナ</div><div><input></div></div>
+<div class="row"><div><span class="required">※</span>メールアドレス</div><div><input type="email"></div></div>
+<div class="row"><div>勤務先・所属等</div><div><input></div></div>
+<div class="row"><div>連絡先</div><div><input></div></div>
+</div>
+</div>
+
+<div class="card">
+<h3>論文情報</h3>
+<div class="card-body">
+<div class="row">
+<div><span class="required">※</span>発表形態</div>
+<div class="radio">
+<label><input type="radio" name="type">口演</label>
+<label><input type="radio" name="type">ポスター</label>
+</div>
+</div>
+
+<div class="row"><div><span class="required">※</span>論文タイトル</div><div><input></div></div>
+
+<div class="row">
+<div><span class="required">※</span>著者名</div>
+<div>
+<table style="width:100%;border:none;">
+<tr><td style="border:none;width:60px;">著者1</td><td style="border:none;"><input type="text" placeholder="氏名"></td><td style="border:none;width:60px;">所属</td><td style="border:none;"><input type="text" placeholder="所属"></td></tr>
+<tr><td style="border:none;">著者2</td><td style="border:none;"><input type="text" placeholder="氏名"></td><td style="border:none;">所属</td><td style="border:none;"><input type="text" placeholder="所属"></td></tr>
+<tr><td style="border:none;">著者3</td><td style="border:none;"><input type="text" placeholder="氏名"></td><td style="border:none;">所属</td><td style="border:none;"><input type="text" placeholder="所属"></td></tr>
+<tr><td style="border:none;">著者4</td><td style="border:none;"><input type="text" placeholder="氏名"></td><td style="border:none;">所属</td><td style="border:none;"><input type="text" placeholder="所属"></td></tr>
+<tr><td style="border:none;">著者5</td><td style="border:none;"><input type="text" placeholder="氏名"></td><td style="border:none;">所属</td><td style="border:none;"><input type="text" placeholder="所属"></td></tr>
+</table>
+</div>
+</div>
+
+<div class="row"><div><span class="required">※</span>要約（400文字以内）</div><div><textarea rows="6"></textarea></div></div>
+
+
+<div class="row"><div>発表カテゴリー</div><div>
+<select>
+<option>選択してください</option>
+<option>カテゴリ1</option>
+<option>カテゴリ2</option>
+<option>カテゴリ3</option>
+<option>カテゴリ4</option>
+<option>カテゴリ5</option>
+</select>
+</div></div>
+
+</div>
+</div>
+
+
+<div class="card">
+<h3>アップロード</h3>
+<div class="card-body">
+<div class="row">
+<div><span class="required">※</span>論文ファイル
+<div style="display:flex;gap:12px;margin-top:10px;">
+<div style="width:34px;height:44px;background:#fff;border:1px solid #bbb;border-radius:4px;position:relative;box-shadow:0 2px 4px rgba(0,0,0,.15);">
+<div style="position:absolute;bottom:0;width:100%;height:14px;background:#c62828;color:#fff;font-size:9px;line-height:14px;text-align:center;font-weight:bold;">PDF</div>
+</div>
+<div style="width:34px;height:44px;background:#fff;border:1px solid #bbb;border-radius:4px;position:relative;box-shadow:0 2px 4px rgba(0,0,0,.15);">
+<div style="position:absolute;bottom:0;width:100%;height:14px;background:#1f5aa6;color:#fff;font-size:9px;line-height:14px;text-align:center;font-weight:bold;">W</div>
+</div>
+</div>
+</div>
+<div>
+<div style="margin-bottom:10px;"><input type="file"> PDF</div>
+<div><input type="file"> Word</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="center">
+<button class="btn" onclick="alert('デモのため保存処理は行いません')">確認する</button>
+</div>
+
+</div>
+</div>
+<div style="background:#333;color:#fff;text-align:center;padding:15px;font-size:13px;">Copyright © サイエンスウェブ株式会社 All Rights Reserved.</div>
+</body></html>
